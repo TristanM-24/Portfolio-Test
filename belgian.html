@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Milk Parlour | Chocolate Brand</title>
+        <link href="https://fonts.googleapis.com/ss?family=Open+Sans:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <a href="index.html">Milk Parlour</a>
+                </div>
+            </div>
+        </header>
+        <section id="hero2">
+            <div class="container">
+                <h1>Welcome to Our Shop</h1>
+                <p>We specialize in handmade chocolates made with the finest ingredients.</p>
+                <a href="#products" onclick="topFunction()" class="btn">View Our Products</a>
+            </div>
+        </section>
+        <script>
+            // Get the button:
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 50; // For Safari
+              document.documentElement.scrollTop = 1200; // For Chrome, Firefox, IE and Opera
+            }
+            </script>
+        <section class="buy-section" style="background-image: url(images/truffles.jpg);"> 
+            <h2 class="product-title">Truffles
+                <p class="tagline">
+                    Our truffles, made with love.
+                    <br>
+                    <button class="buy-now-button" onclick="document.location='belgian.html'">
+                        Buy Now
+                    </button>
+                </p>
+            </h2>
+        </section>
+        <section class="buy-section" style="background-image: url(images/pralines.jpg);"> 
+            <h2 class="product-title">
+                Pralines
+                <p class="tagline">
+                    Our pralines, made with love.
+                    <br>
+                    <button class="buy-now-button" onclick="document.location='belgian.html'">
+                        Buy Now
+                    </button>
+                </p>
+            </h2>
+        </section>  
+        <section class="buy-section" style="background-image: url(images/white.jpg);"> 
+            <h2 class="product-title">
+                White Chocolate
+                <p class="tagline">
+                    Our white chocolate, made with love.
+                    <br>
+                    <button class="buy-now-button" onclick="document.location='belgian.html'">
+                        Buy Now
+                    </button>
+                </p>
+            </h2>
+        </section>
+        <footer class="site-footer">
+            <div class="footer-top">
+                <div class="gooter-col logo-col">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="Milk Parlour Logo">
+                    </div>
+                    <div class="address">
+                        <p>1234 Main St, Anytown USA</p>
+                        <p>Phone: (123) 456-7890</p>
+                    </div>
+                </div>
+                <div class="footer-col nav-col">
+                    <h4>Navigiation</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col social-col">
+                    <h4>Follow Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook fa-2x">Facebook</i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-2x">Twitter (X)</i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram fa-2x">Instagram</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-sub">
+            <div class="footer-bottom">
+                <p>&copy; 2023 Milk Parlour. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+            </div>
+        </div>
+    </body>
+</html>
