@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Milk Parlour | Chocolate Brand</title>
+        <link href="https://fonts.googleapis.com/ss?family=Open+Sans:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <a href="index.html">Milk Parlour</a>
+                </div>
+            </div>
+        </header>
+        <section id="hero">
+            <div class="container">
+                <h1>Welcome to Milk Parlour</h1>
+                <p>We specialize in handmade chocolates made with the finest ingredients.</p>
+                <a href="#products" onclick="topFunction()" class="btn">View Our Products</a>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Milk Parlour is a family-owned chocolate brand based in the heart of the city. Our chocolates are made with the finest ingredients and crafted by hand with care.</p>
+            </div>
+        </section>
+        <section class="fullscreen-section" style="background-image: url(images/choc1.jpeg);">
+            <h2 class="product-title">Belgian Chocolate</h2>
+            <p class="tagline"> Indulge in the rich and favourite sweet treat of Belgium</p>
+            <button class="buy-now-button" onclick="document.location='belgian.html'">Buy Now</button>
+        </section>
+        <section class="fullscreen-section" style="background-image: url(images/choc2.jpeg);">
+            <h2 class="product-title">Chocolate Cakes</h2>
+            <p class="tagline">Try our rich and sweet homemade cakes now!</p>
+            <button class="buy-now-button" onclick="document.location='cakes.html'">Buy Now</button>
+        </section>
+        <section class="fullscreen-section" style="background-image: url(images/choc3.jpeg);">
+            <h2 class="product-title">Hot Chocolate</h2>
+            <p class="tagline">We offer hot chocolate in a variety of flavours and styles.</p>
+            <button class="buy-now-button" onclick="document.location='cocoa.html'">Buy Now</button>
+        </section>
+
+        <script>
+            // Get the button:
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 50; // For Safari
+              document.documentElement.scrollTop = 1550; // For Chrome, Firefox, IE and Opera
+            }
+            </script>
+
+
+
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have a question or comment? Send us a message using the form below:</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <input type="submit" onclick="saveToFile()" value="Send Message">
+                </form>
+            </div>
+        </section>
+
+
+
+        <footer class="site-footer">
+            <div class="footer-top">
+                <div class="gooter-col logo-col">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="Milk Parlour Logo">
+                    </div>
+                    <div class="address">
+                        <p>1234 Main St, Anytown USA</p>
+                        <p>Phone: (123) 456-7890</p>
+                    </div>
+                </div>
+                <div class="footer-col nav-col">
+                    <h4>Navigiation</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col social-col">
+                    <h4>Follow Us</h4>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook fa-2x">Facebook</i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-2x">Twitter (X)</i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram fa-2x">Instagram</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-sub">
+            <div class="footer-bottom">
+                <p>&copy; 2023 Milk Parlour. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+            </div>
+        </div>
+
+    </body>
+</html>
